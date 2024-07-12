@@ -2,10 +2,14 @@ import React from "react";
 import Button from "./Button";
 
 export const Header = ({ title }) => {
+  const onClick = () => {
+    console.log("Okk");
+  };
+
   return (
     <header>
       <h1>{title}</h1>
-      <Button color={"red"} text={"Close"} />
+      <Button onClick={onClick} color={"red"} text={"Close"} />
     </header>
   );
 };
